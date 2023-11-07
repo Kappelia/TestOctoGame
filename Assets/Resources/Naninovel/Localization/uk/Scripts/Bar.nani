@@ -1,0 +1,157 @@
+; English <en> to Ukrainian <uk> localization document for `Bar` naninovel script
+
+# 49bd5dfb
+; I have already done my business here[skipInput]
+Мої справи тут завершено
+
+# 6868b305
+; {L}: Brr, I'm completely soaked... and when will this rain ever stop?
+{L}: Брр, я зовсім промокла... і коли вже цей дощ припиниться?
+
+# 8dea09e5
+; {L}: Would you like some tea, coffee, cakes, alcohol? Maybe something warm, cold? Shall I play some music for you?
+{L}: Бажаєте чаю, кави, тістечок, алкоголю? Може щось тепле, холодне? Пограти тобі музику?
+
+# 399e6909
+; {P}: This doesn't quite feel like home...
+{P}: Це якось не схоже на дім...
+
+# 145c09d5
+; While saying all this, Lily for some reason walks around the old bar and lowers the blinds on the windows. Finally, completely cutting us off from the outside world, she comes very close to me...
+Говорячи все це, Ліля чомусь обходить старий бар і опускає жалюзі на вікнах. Нарешті, повністю відрізавши нас від зовнішнього світу, вона підходить до мене дуже близько...
+
+# 5aa7c47c
+; {P}: What are you...
+{P}: що ти...
+
+# 7e911bcb
+; {L}: Now listen to me carefully. I didn't hit you by accident. I've been looking for you for a long time, and now I need to ask for your help.
+{L}: А тепер слухай мене уважно. Я не випадково тебе вдарив. Я довго вас шукав, а тепер мені потрібно попросити вашої допомоги.
+
+# 14708c9
+; {P}: What? Woman, I could have died! Are you some kind of fool? I think I'll leave here before you come up with some other nonsense
+{P}: Що? Жінко, я міг померти! Ти якийсь дурень? Я думаю, що я піду звідси, поки ти не придумаєш якусь іншу дурницю
+
+# a4eea580
+; {L}: Please, listen... I had no choice. I know that you work at a bank where the treasures of my family are kept.[i] I've been watching you and I know you are a good person and can help me!
+{L}: Будь ласка, послухайте... У мене не було вибору. Я знаю, що ви працюєте в банку, де зберігаються скарби моєї родини.[i] Я спостерігав за вами і знаю, що ви хороша людина і можете мені допомогти!
+
+# dfc36dfe
+; @choice "Leave" goto:Bar.GetOut
+@choice "Піти" goto:Bar.GetOut
+
+# 2500853e
+; @choice "Listen to her" goto:Bar.Stay
+@choice "Вислухати її" goto:Bar.Stay
+
+# cf8d71
+; I leave slamming the door. God, what kind of idiocy is this! Some fool nearly killed me... Maybe I should go to the police? I count to ten trying to contain my anger. She's quite a nice girl, maybe I should have listened to what she wants?
+Я йду, грюкнувши дверима. Господи, що це за ідіотизм! Якийсь дурень ледь не вбив мене... Може, звернутись до поліції? Я рахую до десяти, намагаючись стримати гнів. Вона досить мила дівчина, можливо, я повинен був послухати, що вона хоче?
+
+# d824e7d9
+; {L}: Thank you for staying. The thing is that my parents are in trouble and I don't know if they are alive right now.[i] But recently some people have approached me who can help provided that I pay them, and the money is lying in the bank vault. Don't resist,I know you have permission to get there.
+{L}: Дякую, що залишилися. Справа в тому, що мої батьки в біді, і я не знаю, чи вони зараз живі.[i] Але нещодавно до мене звернулися люди, які можуть допомогти, якщо я їм заплачу, а гроші лежать у сховищі банку. . Не чиніть опір, я знаю, що у вас є дозвіл потрапити туди.
+
+# 1d378154
+; {P}: And what do you want from me? To become a criminal? To ruin my life for someone I've just met?
+{P}: А що ти хочеш від мене? Стати злочинцем? Зруйнувати своє життя заради того, кого я щойно зустрів?
+
+# 40797a92
+; {L}: Thank you for giving me a chance.
+{L}: Дякую, що дали мені шанс.
+
+# 3db839dc
+; {P}: You have 5 minutes to convince me. I'm not going to ruin my life for someone I've just met. And like that.
+{P}: У вас є 5 хвилин, щоб переконати мене. Я не збираюся руйнувати своє життя через когось, кого тільки що зустріла. І так.
+
+# 302fa49a
+; {L}: I understand... but I am in despair. The fact is that my parents are in trouble and I don't know if they are alive right now.[i] But recently some people have approached me who can help provided that I pay them, and the money is lying in the bank vault. Don't resist, I know you have permission to get there.
+{L}: Я розумію... але я в розпачі. Справа в тому, що мої батьки в біді, і я не знаю, чи вони зараз живі.[i] Але нещодавно до мене звернулися люди, які можуть допомогти, якщо я їм заплачу, а гроші лежать у сховищі банку . Не чиніть опір, я знаю, що у вас є дозвіл потрапити туди.
+
+# 4a671224
+; The door to the storeroom bursts open
+Двері в комору з ривком розчиняються
+
+# 2bc70aa0
+; {T}: Enough, sister! Keep at least a shred of dignity!
+{T}: Досить, сестро! Зберігайте хоч крихту гідності!
+
+# a412891a
+; {L}: Thea, why... he won't help if you scare him to death.
+{L}: Тея, чому... він не допоможе, якщо ти налякаєш його до смерті.
+
+# 8008b9f3
+; {T}: Am I scaring? Oh, God, I'm sorry, sir.
+{T}: Мені страшно? О Боже, вибачте, сер.
+
+# 648c029a
+; {T}: My sister will beg you for a long time, but you probably don't care about that. So here - you need this to open the vault.
+{T}: Моя сестра буде вас довго благати, але ви, мабуть, не дбаєте про це. Отже, це вам потрібно, щоб відкрити сховище.
+
+# 71b698d4
+; She spreads her hands, and in one of them, there's something shiny. It's a key.
+{T}: Вона розводить руками, і в одній з них щось блищить. Це ключ.
+
+# 32e03310
+; {T}: And this isn't even a crime. This safe deposit box belonged to our grandparents - but Lily isn't 18 yet, so she doesn't have the right to take anything from there.
+{T}: І це навіть не злочин. Цей сейф належав нашим бабусям і дідусям – але Лілі ще немає 18, тому вона не має права нічого звідти брати.
+
+# b07b7de5
+; {L}: Yes, unfortunately, I can't do anything by myself. But I'm confident you won't have any problems. Please, help us, you're our last hope.
+{L}: Так, на жаль, я нічого не можу зробити сам. Але я впевнений, що у вас не буде проблем. Будь ласка, допоможіть нам, ви наша остання надія.
+
+# cf46dbe5
+; @choice "Take the key" if:!ItemExist("Key") do:"@addItem Key, @goto Bar.NextStep"
+@choice "Візьміть ключ" if:!ItemExist("Ключ") do:"@addItem Key, @goto Bar.NextStep"
+
+# 7db27138
+; {T}: If you've already agreed, the money is in a chest that has a secret - you'll need to find similar symbols and press them at the same time.[i] I've prepared a practice game for you so you can understand the principle.
+{T}: Якщо ви вже погодилися, гроші знаходяться в скрині з секретом - вам потрібно буде знайти схожі символи та натиснути їх одночасно.[i] Я підготував для вас практичну гру щоб ви могли зрозуміти принцип.
+
+# 83cc6313
+; {L}: See, he is smart, and he will manage.
+{L}: Бачиш, він розумний і впорається.
+
+# 68872eb
+; {T}: I hope so, sister, I really do.
+{T}: Сподіваюся, сестро, справді так.
+
+# 6c37277b
+; {P}: Hey, sisters, I'm back!
+{P}: Привіт, сестри, я повернувся!
+
+# 11c60058
+; {P}: Are they making fun of me?
+{P}: Вони знущаються з мене?
+
+# 6bb8f93a
+; {P}: I feel like a complete fool... well, at least I have the money.
+{P}: Я почуваюся повним дурнем... ну, принаймні у мене є гроші.
+
+# 865f6af7
+; {P}: But thinking about it, it's quite a lot of money. I could probably stop working altogether, or buy real estate or a nice car... So, should I really help strangers?
+{P}: Але якщо подумати про це, то це досить багато грошей. Можливо, я міг би зовсім припинити роботу, або купити нерухомість чи гарну машину... Тож чи справді я повинен допомагати незнайомим людям?
+
+# f65db12e
+; Out of curiosity, I start looking around my acquaintances' dwelling. The main hall of the bar looks approximately like a regular establishment, only dirtier.
+З цікавості починаю оглядати житло своїх знайомих. Головний зал бару виглядає приблизно як звичайний заклад, тільки брудніше.
+
+# fd82edca
+; On one of the tables, there are textbooks and papers for medical school admission, and on another, there are textbooks and a high schooler's backpack.
+На одному зі столів лежать підручники та роботи для вступу до медінституту, на іншому – підручники та рюкзак старшокласника.
+
+# 10c87792
+; At one point, I see a note seemingly left deliberately in a prominent place.
+В якийсь момент я бачу записку, нібито навмисно залишену на видному місці.
+
+# 3bb6bdb7
+; "Hey, what's your name... {P} - listen, I'm sorry I was so harsh with you, but my sister, although grown-up, is as naive as a three-year-old. I know there was money in the vault, and I ask you to give it to me. I understand this may seem strange to you - but our parents have been dead for a long time, and this money is the only thing my sister hasn't yet paid to the lawyers and private detectives. She doesn't understand when I ask her, says I'm a child and all that. You see this hole where we live, and soon they will take it away for debts too. Please, show a little more humanity. Thea."
+"Гей, як тебе звуть... {P} - послухай, мені шкода, що я був такий різкий з тобою, але моя сестра, хоч і доросла, така ж наївна, як трирічна. Я знаю, що було гроші в сховищі, і я прошу вас віддати їх мені. Я розумію, що це може здатися вам дивним, але наші батьки вже давно померли, і ці гроші - єдине, чим моя сестра ще не заплатила юристи і приватні детективи.вона не розуміє коли я її питаю каже я дитина і все таке бачиш оту дірку де ми живемо скоро і її заберуть за борги покажи будь ласка трохи більше людяності. Тея."
+
+# 3460b7d7
+; On the back, it's written - "We will wait at 7 where you were hit by the car."
+На звороті написано – «Будемо чекати о 7 там, де вас збила машина».
+
+# cc15552e
+; {P}: What am I supposed to decide?
+{P}: Що я маю вирішити?

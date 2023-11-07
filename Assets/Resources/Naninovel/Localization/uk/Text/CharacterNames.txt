@@ -1,0 +1,4 @@
+; English <en> to Ukrainian <uk> localization document for `CharacterNames` managed text document
+
+L: Лілі
+T: Тея

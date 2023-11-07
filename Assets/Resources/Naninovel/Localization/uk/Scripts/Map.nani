@@ -1,0 +1,36 @@
+; English <en> to Ukrainian <uk> localization document for `Map` naninovel script
+
+# 49d48926
+; Lily takes me to her place...a strange girl..
+Лілі везе мене до себе...дивна дівчина.
+
+# 56b7b320
+; @choice handler:ButtonArea button:MapButtons/Bar pos:10,20,-1 
+
+# 2c20d7ac
+; I have to go to work at the bank...what have I gotten myself into??
+Мені треба піти до себе на роботу в банк...у що я вляпався?
+
+# bed44d01
+; @choice handler:ButtonArea button:MapButtons/Bank pos:20,100,-1 
+
+# e61f0f3e
+; The sisters are not at home - they say you should go to the place where it all began. In that alley...
+Сестер немає вдома - кажуть треба піти туди де все почалося. У той провулок...
+
+# 74262c71
+; @choice handler:ButtonArea button:MapButtons/Street pos:12,120,-1 
+
+# f0852a41
+; That's all...it's probably time to go home...
+Ось і все...мабуть час вже йти додому...
+
+# 6c1979fc
+; @choice handler:ButtonArea button:MapButtons/Home pos:80,-100,-1 
+
+# eb2d00df
+; Now you can go back to the sisters at the bar...it's time to think about the road
+Тепер можна повернуться до сестер у бар...є час подумати дорогою
+
+# 74262c71
+; @choice handler:ButtonArea button:MapButtons/Street pos:12,120,-1 

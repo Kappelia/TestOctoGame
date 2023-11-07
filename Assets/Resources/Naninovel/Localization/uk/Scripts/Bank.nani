@@ -1,0 +1,41 @@
+; English <en> to Ukrainian <uk> localization document for `Bank` naninovel script
+
+# ce44f7c4
+; 	I don't need to go to the bank[skipInput]
+Мені не треба в банк[skipInput]
+
+# 9c139a58
+; {P}: God, what am I doing here... I'm going to get arrested.
+ {P}: Боже, що я тут роблю... Мене заарештують.
+
+# 134f8354
+; {P}: Okay, I'll quickly take care of everything and nobody will find out. I have everything I need and nothing will go wrong.
+ {P}: Гаразд, я швидко все владнаю і ніхто не дізнається. У мене є все необхідне і нічого не піде не так.
+
+# cac7fcdf
+; I walk past the guard - a friendly giant I see every day in the elevator, we exchange a few words.
+ Проходжу повз охоронця - доброзичливого велетня, якого бачу щодня в ліфті, ми обмінюємося кількома словами.
+
+# 53263f34
+; I've concocted a story and even kindly offered to move some artifacts to the vault instead of a colleague. So, nothing should arouse suspicion.
+ Я придумав історію і навіть люб'язно запропонував перенести деякі артефакти до сховища замість колеги. Тож нічого не повинно викликати підозр.
+
+# 372aad
+; I pass all the checkpoints - they trust me because people like me don't usually do something this foolish.
+ Я проходжу всі контрольно-пропускні пункти - мені довіряють, бо люди, подібні до мене, зазвичай не роблять чогось настільки безрозсудного.
+
+# 3f2d0c8f
+; Here's the cell I need. With trembling hands, I carefully open it. The sisters didn't lie - what I see inside is far more valuable than the fake I had.
+ Ось камера, яка мені потрібна. З тремтячими руками акуратно відкриваю її. Сестри не брехали - те, що я бачу всередині, набагато цінніше, ніж підробка, яку я мав.
+
+# 11e11952
+; I hear the guard's footsteps and realize I need to quickly make the necessary manipulations that Teya taught me, to have enough time to leave unnoticed.
+ Чую кроки охоронця і усвідомлюю, що мені потрібно швидко виконати необхідні маніпуляції, які навчила мене Тея, щоб вистачило часу непомітно піти.
+
+# 2d8be85d
+; @choice "Use the key" if:!ItemExist("Key")&&!ItemExist("Money") do:"@removeItem Key,@addItem Money"
+ @choice "Використати ключ" if:!ItemExist("Key")&&!ItemExist("Money") do:"@removeItem Key,@addItem Money"
+
+# 2c3ff298
+; {P}: Now you have to go back before anyone notices this pile of money!!
+{P}: Тепер треба повертатися поки ніхто не помітив цю купу грошей!

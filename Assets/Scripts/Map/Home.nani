@@ -1,0 +1,12 @@
+@back home
+@if !homeAvailible
+	I can't drop everything and go home...[skipInput]
+    @back color="000000" transition:Crossfade
+    @hidePrinter
+	@goto Map
+@endif
+
+@back home
+@char P.normal scale:0.7 visible:true pos:10,-50,-1
+{P}: Finally home...
+@stop

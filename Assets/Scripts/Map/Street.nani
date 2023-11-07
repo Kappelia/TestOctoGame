@@ -1,0 +1,72 @@
+@back street
+@if !streetAvailible
+	I don't think I went there[skipInput]
+    @back street" transition:Crossfade
+    @hidePrinter
+	@goto Map
+@endif
+
+
+#MyChoice
+@printer Dialogue
+@back street
+@char P.nervous scale:0.7 visible:true look:Right pos:10,-50,-1
+{P}: I feel like a complete fool...
+@char T.happy visible:true pos:80,-90,-1
+@set T="Teya"
+{T}: Hey, we're here, {P}!
+@char L.Smile03 visible:true pos:90,-50,-1
+{L}: God, at last we can free our parents... after so many years.
+@hideChars
+{P}: It's time to decide what to do with the money
+@choice "Keep it for myself" goto:.YourMoneyisMine
+@choice "Give the money to Teya" goto:.GiveMoneyTeya
+@choice "Give the money to Lily" goto:.GiveMoneyLily
+@stop
+
+#YourMoneyisMine
+@back street
+@char P.angry scale:0.7 visible:true pos:10,-50,-1
+{P}: Hello... girls. I've been thinking, you know I want to keep the money for myself. You both are ignorant and naive fools for trusting a stranger, so my conscience is clear! Go back to your hole and never look for me again.
+@char L.Sad02 visible:true pos:50,-50,-1
+{L}: No... no, you can't do this!
+{P}: You know, it's a nice compensation for hitting me!
+@char T.angry visible:true pos:90,-90,-1
+{T}: Too bad it wasn't to death! I hate you!
+{P}: You said what you said, but it's time for me to go home.
+@back street transition:Crossfade time:1
+@hideChars
+@goto Map.Map4
+@stop
+
+#GiveMoneyLily
+@back street
+@char P.normal scale:0.7 visible:true pos:10,-50,-1
+@char L.Smile01 visible:true pos:50,-50,-1
+@char T.happy visible:true pos:90,-90,-1
+{P}: Lily, please take the money. I understand that in your situation you'd grab at any straw to help your loved ones. Sorry, Teya, but your sister, although more naive, has a good heart.
+@char P.cry scale:0.7 visible:true pos:10,-50,-1
+@char T.angry visible:true pos:75,-90,-1
+{T}: Oh, great... a bunch of naive idiots who believe in fairy tales with happy endings. I'll finish school and you'll never see me in this ugly place again. I hate you both!
+@char L.Smile03 visible:true pos:90,-50,-1
+{L}: Thank you, {P}. I hope my sister will understand...
+{P}: You said what you said, but it's time for me to go home.
+@back street transition:Crossfade time:1
+@hideChars
+@goto Map.Map4
+@stop
+
+#GiveMoneyTeya
+@back street
+@char P.normal scale:0.7 visible:true pos:10,-50,-1
+@char T.happy visible:true pos:90,-90,-1
+@char L.Annoyed02 visible:true pos:50,-50,-1
+{P}: Teya, I understand you - that's why I'm giving the money to you. You're younger but you have a more mature and cold mind. Sometimes you really need to let go of the ghostly past to not lose what you have now. Sorry, Lily. But you need to accept the fact that your parents are dead.
+{L}: It's none of your business, {P}. You don't understand what it's like to lose loved ones. It was foolish of me to trust you!
+{T}: Thank you for your honesty - although now I'll have to spend a long time repairing bridges with Lily... but she'll understand, in time.
+{P}: You said what you said, but it's time for me to go home.
+@back street transition:Crossfade time:1
+@hideChars
+@goto Map.Map4
+@stop
+

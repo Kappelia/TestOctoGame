@@ -1,0 +1,69 @@
+; English <en> to Ukrainian <uk> localization document for `FirstScene` naninovel script
+
+# 38ce8f6
+; It was a regular day... sleepy morning, office work, way back home... 
+Це був звичайний день... сонний ранок, офісна робота, дорога додому...
+
+# e868a25d
+; I guess I just needed a break.. Oh, I'm so tired.. and the rent has gone up too...
+Мабуть, мені просто потрібен був перепочинок... Ох, я так втомився... і оренда теж піднялася...
+
+# 575b9137
+; Then I must have gotten lost in thought and didn't notice anything at all
+Тоді я, напевно, загубився у думках і зовсім нічого не помітив
+
+# 48f55003
+; I must have lost consciousness... but when I woke up, I felt I was lying on the ground, with a frightened girl kneeling over me.
+Я, мабуть, втратив свідомість... але коли я прокинувся, відчув, що лежу на землі, а наді мною на колінах стояла налякана дівчина.
+
+# 995913dc
+; {L}: Please don't die... hey, wake up, please!
+{L}: Будь ласка не помирайте,прокиньтеся прошу вас!
+
+# 927b8db5
+; Coming to my senses, I almost immediately jumped to my feet - luckily nothing hurt. 
+Опритомнівши, я майже відразу підскочив на ноги - на щастя, нічого не боліло.
+
+# 58b98943
+; {P}: So much for a short trip...
+{P}: Так багато за коротку подорож...
+
+# acf7a503
+; {L}: Please, tell me if it hurts anywhere, I'll take you to the hospital!
+{L}: Будь ласка, скажи, якщо щось болить, я відведу тебе до лікарні!
+
+# cf95736a
+; {P}: No, I'm fine... Luckily, I fell on some boxes...
+{P}: Ні, я в порядку... На щастя, я впав на кілька коробок...
+
+# e01feae3
+; {L}: And do you remember your name? By the way, my name is Lily
+{L}: А ти пам'ятаєш своє ім'я? До речі, мене звати Лілія
+
+# 10801f9
+; @input P summary:""
+@input P summary:""
+
+# dc0bbdb0
+; {L}: {P}, right? Good, so your head is intact. 
+{L}: {P}, так? Значит голова ціла. 
+
+# dd8be929
+; {L}: I live nearby, I have some treats for dinner, how do you feel about having dinner together? Some apologies from me wouldn't hurt...
+{L}: Я живу неподалік, у мене є кілька смаколиків на вечерю, як ти ставишся до спільної вечері? Кілька вибачень від мене не зашкодять...
+
+# df54cde9
+; {P}: And you... are you sure you want to let a stranger into your house?
+{P}: А ти... ти впевнена, що хочеш впустити незнайомця до свого дому?
+
+# 51dbdef7
+; {L}: Are you already thinking of some nonsense?!
+{L}: Ти вже думаєш про якусь нісенітницю?!
+
+# 84bc253b
+; {P}: No-no... I do walk the night streets alone, but only because I'm constantly late due to work...
+Ні-ні,я ходжу нічними вулицями та лише через те що затримуюсь на роботі
+
+# 32fcea19
+; {L}: Alright, then let's go because I'm very hungry!
+{L}: Гаразд, тоді йдемо, бо я дуже голодна!

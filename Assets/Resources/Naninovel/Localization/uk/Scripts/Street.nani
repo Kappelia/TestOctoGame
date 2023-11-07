@@ -1,0 +1,85 @@
+; English <en> to Ukrainian <uk> localization document for `Street` naninovel script
+
+# 3863675e
+; 	I don't think I went there[skipInput]
+Здається мені не сюди[skipInput]
+
+# 8d188d60
+; {P}: I feel like a complete fool...
+{P}: Я почуваюся повним дурнем...
+
+# bd93e406
+; {T}: Hey, we're here, {P}!
+{T}: Привіт, ми тут, {P}!
+
+# 95af372e
+; {L}: God, at last we can free our parents... after so many years.
+{L}: Господи, нарешті ми можемо звільнити наших батьків... після стількох років.
+
+# 8f58dcb0
+; @print "It's time to decide what to do with the money"
+@print "Пора вирішити, що робити з грошима"
+
+# edb74434
+; @choice "Keep it for myself" if:!ItemExist("Money") do:"@removeItem Money, @goto .YourMoneyisMine"
+@choice "Залишити собі" if:!ItemExist("Money") do:"@removeItem Money, @goto .YourMoneyisMine"
+
+# f649480b
+; @choice "Give the money to Teya" if:!ItemExist("Money") do:"@removeItem Money, @goto .GiveMoneyTeya"
+@choice "Віддайте гроші Теї" if:!ItemExist("Гроші") do:"@removeItem Гроші, @goto .GiveMoneyTeya"
+
+# a81aa863
+; @choice "Give the money to Lily" if:!ItemExist("Money") do:"@removeItem Money, @goto .GiveMoneyLily"
+@choice "Віддайте гроші Лілі" if:!ItemExist("Гроші") do:"@removeItem Гроші, @goto .GiveMoneyLily"
+
+# 442cab6
+; {P}: Hello... girls. I've been thinking, you know I want to keep the money for myself. You both are ignorant and naive fools for trusting a stranger, so my conscience is clear! Go back to your hole and never look for me again.
+{P}: Привіт... дівчата. Я думав, ти знаєш, я хочу залишити гроші собі. Ви обоє невігласи й наївні дурні, що довіряєте незнайомій людині, тож моя совість чиста! Повертайся до своєї нори і більше ніколи мене не шукай.
+
+# ecccd3da
+; {L}: No... no, you can't do this!
+{L}: Ні... ні, ти не можеш цього робити!
+
+# 8cf7123c
+; {P}: You know, it's a nice compensation for hitting me!
+{P}: Знаєш, це гарна компенсація за те, що ти мене вдарив!
+
+# 1cf95cf8
+; {T}: Too bad it wasn't to death! I hate you!
+{T}: Шкода, що не до смерті! я тебе ненавиджу!
+
+# f83ae80a
+; {P}: You said what you said, but it's time for me to go home.
+{P}: Ви своє сказали,а мені вже час додому
+
+# 27259205
+; {P}: Lily, please take the money. I understand that in your situation you'd grab at any straw to help your loved ones. Sorry, Teya, but your sister, although more naive, has a good heart.
+{P}: Лілі, будь ласка, візьми гроші. Я розумію, що у вашій ситуації ви вхопитеся за будь-яку соломинку, щоб допомогти своїм близьким. Вибач, Тея, але твоя сестра, хоч і більш наївна, має добре серце.
+
+# 19e763b6
+; {T}: Oh, great... a bunch of naive idiots who believe in fairy tales with happy endings. I'll finish school and you'll never see me in this ugly place again. I hate you both!
+{T}: О, чудово... купка наївних ідіотів, які вірять у казки зі щасливим кінцем. Я закінчу школу, і ти більше ніколи не побачиш мене в цьому потворному місці. Я вас обох ненавиджу!
+
+# d9f2862e
+; {L}: Thank you, {P}. I hope my sister will understand...
+{L}: Дякую, {P}. Сподіваюся, моя сестра зрозуміє...
+
+# f83ae80a
+; {P}: You said what you said, but it's time for me to go home.
+{P}: Ви своє сказали,а мені вже час додому
+
+# 93ae47ba
+; {P}: Teya, I understand you - that's why I'm giving the money to you. You're younger but you have a more mature and cold mind. Sometimes you really need to let go of the ghostly past to not lose what you have now. Sorry, Lily. But you need to accept the fact that your parents are dead.
+{P}: Тея, я тебе розумію, тому я тобі віддаю гроші. Ти молодший, але у тебе більш зрілий і холодний розум. Іноді вам дійсно потрібно відпустити примарне минуле, щоб не втратити те, що ви маєте зараз. Вибач, Лілі. Але вам потрібно прийняти той факт, що ваші батьки померли.
+
+# 228ca63d
+; {L}: It's none of your business, {P}. You don't understand what it's like to lose loved ones. It was foolish of me to trust you!
+{L}: Це не твоя справа, {P}. Ви не розумієте, як це - втрачати близьких. Це було нерозумно з мого боку довіряти тобі!
+
+# ed558c03
+; {T}: Thank you for your honesty - although now I'll have to spend a long time repairing bridges with Lily... but she'll understand, in time.
+{T}: Дякую за твою чесність - хоча тепер мені доведеться довго ремонтувати мости з Лілі... але вона з часом зрозуміє.
+
+# f83ae80a
+; {P}: You said what you said, but it's time for me to go home.
+{P}: Ви своє сказали,а мені вже час додому

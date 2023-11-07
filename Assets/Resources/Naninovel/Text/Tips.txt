@@ -1,0 +1,5 @@
+Tip1ID: Квест 1 Дивна зустріч | Tip 1 Description
+Tip2ID: Квест 2 Сумнівна допомога | Tip 2 Description
+Tip3ID: Квест 3 Дорога сумнівів | Tip 2 Description
+Tip4ID: Квест4 Вирішальна розмова | Tip 4 Description
+Tip4ID: Квест4 Кінець справам | Tip 4 Description

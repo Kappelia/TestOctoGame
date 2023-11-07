@@ -1,0 +1,134 @@
+@back bar
+@if !barAvailible
+I have already done my business here[skipInput]
+    @back bar transition:Crossfade
+    @hidePrinter
+	@goto Map
+@endif
+@if cellUnlocked
+	@goto .AfterBank
+@endif
+#Sisters
+@back bar.CircleReveal 
+@char P.nervous look:Right scale:0.7 pos:80,-35,-1 
+@char L.Smile01 scale:1  pos:12,-35,-1 
+@printer Dialogue
+{L}: Brr, I'm completely soaked... and when will this rain ever stop?
+{L}: Would you like some tea, coffee, cakes, alcohol? Maybe something warm, cold? Shall I play some music for you?
+{P}: This doesn't quite feel like home...
+@hideChars
+@printer Fullscreen 
+While saying all this, Lily for some reason walks around the old bar and lowers the blinds on the windows. Finally, completely cutting us off from the outside world, she comes very close to me...
+@resetText
+@printer Dialogue
+@char P.flustered scale:0.7 visible:true look:Left pos:75,-35,-1 
+{P}: What are you...
+@char L.Neutral02 scale:1 look:Right pos:60,-35,-2 
+{L}: Now listen to me carefully. I didn't hit you by accident. I've been looking for you for a long time, and now I need to ask for your help.
+@char P.angry look:Left scale:0.7 pos:85,-35,-1 
+{P}: What? Woman, I could have died! Are you some kind of fool? I think I'll leave here before you come up with some other nonsense
+@char L.Sad02 scale:1 look:Right pos:60,-35,-2 
+{L}: Please, listen... I had no choice. I know that you work at a bank where the treasures of my family are kept.[i] I've been watching you and I know you are a good person and can help me!
+@choice "Leave" goto:Bar.GetOut
+@choice "Listen to her" goto:Bar.Stay
+@stop
+
+#GetOut
+@hideChars
+@printer Fullscreen 
+I leave slamming the door. God, what kind of idiocy is this! Some fool nearly killed me... Maybe I should go to the police? I count to ten trying to contain my anger. She's quite a nice girl, maybe I should have listened to what she wants?
+@resetText
+@goto Bar.Back
+@stop
+
+#Stay
+@printer Dialogue
+@char L.Smile03 visible:true scale:1 look:Right pos:60,-35,-2 
+@char P.angry look:Left scale:0.7 pos:85,-35,-1 
+{L}: Thank you for staying. The thing is that my parents are in trouble and I don't know if they are alive right now.[i] But recently some people have approached me who can help provided that I pay them, and the money is lying in the bank vault. Don't resist,I know you have permission to get there.
+{P}: And what do you want from me? To become a criminal? To ruin my life for someone I've just met?
+
+#Back
+@printer Dialogue
+@char L.Smile01 visible:true scale:1 look:Right pos:60,-35,-2 
+{L}: Thank you for giving me a chance.
+@char P.angry look:Left scale:0.7 pos:85,-35,-1 
+{P}: You have 5 minutes to convince me. I'm not going to ruin my life for someone I've just met. And like that.
+@char L.Sad01 visible:true scale:1 look:Right pos:60,-35,-2 
+{L}: I understand... but I am in despair. The fact is that my parents are in trouble and I don't know if they are alive right now.[i] But recently some people have approached me who can help provided that I pay them, and the money is lying in the bank vault. Don't resist, I know you have permission to get there.
+@hideChars
+@printer Fullscreen 
+The door to the storeroom bursts open
+@resetText
+@printer Dialogue
+@char T.angry visible:true  pos:12,-80,-1 
+@set T="Stranger"
+{T}: Enough, sister! Keep at least a shred of dignity!
+@char L.Sad01 visible:true scale:1 look:Right pos:60,-35,-2 
+@char P.neutral visible:true scale:1 look:Right pos:60,-35,-2 
+{L}: Thea, why... he won't help if you scare him to death.
+@set T="Thea"
+@char T.happy visible:true  pos:12,-80,-1 
+{T}: Am I scaring? Oh, God, I'm sorry, sir.
+{T}: My sister will beg you for a long time, but you probably don't care about that. So here - you need this to open the vault.
+@hideChars
+@printer Fullscreen 
+She spreads her hands, and in one of them, there's something shiny. It's a key.
+@resetText
+@printer Dialogue
+@char T.happy visible:true  pos:25,-80,-1 
+@char L.Smile02 visible:true scale:0.9 look:Right pos:40,-35,-2 
+{T}: And this isn't even a crime. This safe deposit box belonged to our grandparents - but Lily isn't 18 yet, so she doesn't have the right to take anything from there.
+{L}: Yes, unfortunately, I can't do anything by myself. But I'm confident you won't have any problems. Please, help us, you're our last hope.
+@choice "Take the key" if:!ItemExist("Key") do:"@addItem Key, @goto Bar.NextStep"
+@stop
+
+#NextStep
+{T}: If you've already agreed, the money is in a chest that has a secret - you'll need to find similar symbols and press them at the same time.[i] I've prepared a practice game for you so you can understand the principle.
+@wait 0.5
+@hideChars
+@back desk tint:#000000 time:1
+
+@startMiniGame
+@wait 9999  
+
+#postMiniGame
+@back bar.CircleReveal 
+@char L.Smile03 look:Right pos:90,-40,-1
+{L}: See, he is smart, and he will manage.
+@char T.sad pos:40,-80,-1
+{T}: I hope so, sister, I really do.
+@back bar transition:Crossfade
+@hideChars
+@goto Map.Map2
+
+@stop
+
+
+#AfterBank
+@back bar.CircleReveal 
+@char P.normal look:Left scale:0.7 pos:80,-35,-1
+@printer Dialogue
+{P}: Hey, sisters, I'm back!
+@char P.normal look:Right scale:0.7 pos:80,-35,-1
+{P}: Are they making fun of me?
+{P}: I feel like a complete fool... well, at least I have the money.
+{P}: But thinking about it, it's quite a lot of money. I could probably stop working altogether, or buy real estate or a nice car... So, should I really help strangers?
+@char P visible:false
+@printer Fullscreen 
+Out of curiosity, I start looking around my acquaintances' dwelling. The main hall of the bar looks approximately like a regular establishment, only dirtier.
+@resetText
+On one of the tables, there are textbooks and papers for medical school admission, and on another, there are textbooks and a high schooler's backpack.
+@resetText
+At one point, I see a note seemingly left deliberately in a prominent place.
+@resetText
+"Hey, what's your name... {P} - listen, I'm sorry I was so harsh with you, but my sister, although grown-up, is as naive as a three-year-old. I know there was money in the vault, and I ask you to give it to me. I understand this may seem strange to you - but our parents have been dead for a long time, and this money is the only thing my sister hasn't yet paid to the lawyers and private detectives. She doesn't understand when I ask her, says I'm a child and all that. You see this hole where we live, and soon they will take it away for debts too. Please, show a little more humanity. Thea."
+@resetText
+On the back, it's written - "We will wait at 7 where you were hit by the car."
+@printer Dialogue
+@char P.normal visible:true look:Right scale:0.7 pos:80,-35,-1
+{P}: What am I supposed to decide?
+@back bar transition:Crossfade
+@goto Map.Map3
+
+

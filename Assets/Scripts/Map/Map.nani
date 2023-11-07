@@ -1,0 +1,79 @@
+;Лілі везе нас до себе
+#Map1
+@set barAvailible=true;
+@printer TooltipPrinter
+@showUI Map
+Lily takes me to her place...a strange girl..
+@choice handler:ButtonArea button:MapButtons/Bar pos:10,20,-1 
+@set barAvailible=true
+@save
+@hideUI Map
+@hidePrinter
+@goto Bar.Sisters
+@stop
+
+;Гравець ыде в банк
+#Map2
+@set streetAvailible=false
+@set bankAvailible=true
+@set barAvailible=false
+@set homeAvailible=false
+@printer TooltipPrinter
+@showUI Map
+I have to go to work at the bank...what have I gotten myself into??
+@choice handler:ButtonArea button:MapButtons/Bank pos:20,100,-1 
+@save
+@hidePrinter
+@hideUI Map
+@goto Bank.Key 
+@stop
+
+
+;гравець йде з бару де не було Лілі та Теї на місце зустрічі
+#Map3
+@set streetAvailible=true
+@set bankAvailible=false
+@set barAvailible=false
+@set homeAvailible=false
+@printer TooltipPrinter
+@showUI Map
+The sisters are not at home - they say you should go to the place where it all began. In that alley...
+@choice handler:ButtonArea button:MapButtons/Street pos:12,120,-1 
+@save
+@hidePrinter
+@hideUI Map
+@goto Street.MyChoice
+@stop
+
+;Гравець повертається додому
+#Map4
+@set streetAvailible=false
+@set bankAvailible=false
+@set barAvailible=false
+@set homeAvailible=true
+@printer TooltipPrinter
+@showUI Map
+That's all...it's probably time to go home...
+@choice handler:ButtonArea button:MapButtons/Home pos:80,-100,-1 
+@save
+@hidePrinter
+@hideUI Map
+@goto Home 
+@stop
+
+;Гравець повертається з банку до бару де живуть сестри
+#Map5
+@set streetAvailible=false
+@set bankAvailible=false
+@set barAvailible=true
+@set homeAvailible=false
+@printer TooltipPrinter
+@showUI Map
+Now you can go back to the sisters at the bar...it's time to think about the road
+@choice handler:ButtonArea button:MapButtons/Street pos:12,120,-1 
+@set streetAvailible=true
+@save
+@hidePrinter
+@hideUI Map
+@goto Bar.AfterBank
+@stop

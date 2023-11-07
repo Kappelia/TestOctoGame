@@ -1,0 +1,36 @@
+@back bank
+@if !bankAvailible
+	I don't need to go to the bank[skipInput]
+    @back map transition:Crossfade
+    @hidePrinter
+	@goto Map
+@elseIf bankAvailible
+#Key
+@printer Dialogue
+@char P.confused visible:true look:Left scale:0.7 pos:80,-35,-1
+{P}: God, what am I doing here... I'm going to get arrested.
+{P}: Okay, I'll quickly take care of everything and nobody will find out. I have everything I need and nothing will go wrong.
+@hideChars
+@printer Fullscreen 
+I walk past the guard - a friendly giant I see every day in the elevator, we exchange a few words.
+@resetText
+I've concocted a story and even kindly offered to move some artifacts to the vault instead of a colleague. So, nothing should arouse suspicion.
+@resetText
+I pass all the checkpoints - they trust me because people like me don't usually do something this foolish.
+@resetText
+Here's the cell I need. With trembling hands, I carefully open it. The sisters didn't lie - what I see inside is far more valuable than the fake I had.
+@resetText
+I hear the guard's footsteps and realize I need to quickly make the necessary manipulations that Teya taught me, to have enough time to leave unnoticed.
+@resetText
+@choice "Use the key" if:!ItemExist("Key")&&!ItemExist("Money") do:"@removeItem Key,@addItem Money goto .TimeToGo"
+@set cellUnlocked=true;
+@stop
+
+#TimeToGo
+@printer Dialogue
+@char P.nervous visible:true look:Right scale:0.7 pos:80,-35,-1
+{P}: Now you have to go back before anyone notices this pile of money!!
+@back bank transition:Crossfade
+@goto Map.Map5
+@stop
+@endif
