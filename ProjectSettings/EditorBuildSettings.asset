@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/First.unity
+    guid: 9ea0197814244c9448949928e8e8f7ff
+  - enabled: 1
+    path: Assets/Scenes/SetUp.unity
+    guid: 982b701c09ee35742b77442003aedcf2
+  - enabled: 1
+    path: Assets/Scenes/MemoryCardGame.unity
+    guid: 35c5671fdecfb2448a615ae55d7b9711
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/Second.unity
+    guid: 58102560cd2a62146af60cd2c0e9df15
   m_configObjects: {}
